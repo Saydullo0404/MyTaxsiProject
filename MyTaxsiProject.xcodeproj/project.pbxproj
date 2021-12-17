@@ -14,9 +14,16 @@
 		63C26F95276B548D0000857C /* MyTaxsiProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63C26F93276B548D0000857C /* MyTaxsiProject.xcdatamodeld */; };
 		63C26F97276B54900000857C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C26F96276B54900000857C /* Assets.xcassets */; };
 		63C26F9A276B54900000857C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C26F98276B54900000857C /* LaunchScreen.storyboard */; };
+		63C26FA6276C4DC50000857C /* MenuListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FA5276C4DC50000857C /* MenuListVC.swift */; };
+		63C26FA8276C50670000857C /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FA7276C50670000857C /* SideMenuCell.swift */; };
+		63C26FAA276C5B600000857C /* MytripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FA9276C5B600000857C /* MytripsViewController.swift */; };
+		63C26FAD276C8C830000857C /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FAC276C8C830000857C /* OrderViewCell.swift */; };
+		63C26FB0276CB8500000857C /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FAF276CB8500000857C /* OrderData.swift */; };
+		84DA70CA59080BEF283C2E98 /* Pods_MyTaxsiProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47040DE3B7D7C9AFC06F1A84 /* Pods_MyTaxsiProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47040DE3B7D7C9AFC06F1A84 /* Pods_MyTaxsiProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxsiProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C26F87276B548D0000857C /* MyTaxsiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxsiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C26F8A276B548D0000857C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C26F8C276B548D0000857C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,13 @@
 		63C26F96276B54900000857C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C26F99276B54900000857C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C26F9B276B54900000857C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C26FA5276C4DC50000857C /* MenuListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListVC.swift; sourceTree = "<group>"; };
+		63C26FA7276C50670000857C /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		63C26FA9276C5B600000857C /* MytripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytripsViewController.swift; sourceTree = "<group>"; };
+		63C26FAC276C8C830000857C /* OrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
+		63C26FAF276CB8500000857C /* OrderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
+		81E12EDC792DDAB4CE36FA85 /* Pods-MyTaxsiProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxsiProject.release.xcconfig"; path = "Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject.release.xcconfig"; sourceTree = "<group>"; };
+		B7353E10A6A5A77F917C0AE2 /* Pods-MyTaxsiProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxsiProject.debug.xcconfig"; path = "Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DA70CA59080BEF283C2E98 /* Pods_MyTaxsiProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42465EEE9B42D5E6C38E2B7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47040DE3B7D7C9AFC06F1A84 /* Pods_MyTaxsiProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63C26F7E276B548D0000857C = {
 			isa = PBXGroup;
 			children = (
 				63C26F89276B548D0000857C /* MyTaxsiProject */,
 				63C26F88276B548D0000857C /* Products */,
+				CBF6BCAC5FB8414C339504AE /* Pods */,
+				42465EEE9B42D5E6C38E2B7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +83,78 @@
 		63C26F89276B548D0000857C /* MyTaxsiProject */ = {
 			isa = PBXGroup;
 			children = (
-				63C26F8A276B548D0000857C /* AppDelegate.swift */,
-				63C26F8C276B548D0000857C /* SceneDelegate.swift */,
-				63C26F8E276B548D0000857C /* ViewController.swift */,
-				63C26F90276B548D0000857C /* Main.storyboard */,
-				63C26F96276B54900000857C /* Assets.xcassets */,
-				63C26F98276B54900000857C /* LaunchScreen.storyboard */,
+				63C26FAE276CB8300000857C /* ModelData */,
+				63C26FAB276C8C4E0000857C /* OrderCollectionViewCell */,
+				63C26FA1276B54960000857C /* App */,
+				63C26FA2276B54C20000857C /* Controller */,
+				63C26FA4276C4DB60000857C /* SideMenu */,
+				63C26FA3276B54D30000857C /* Main */,
 				63C26F9B276B54900000857C /* Info.plist */,
 				63C26F93276B548D0000857C /* MyTaxsiProject.xcdatamodeld */,
 			);
 			path = MyTaxsiProject;
+			sourceTree = "<group>";
+		};
+		63C26FA1276B54960000857C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				63C26F8C276B548D0000857C /* SceneDelegate.swift */,
+				63C26F8A276B548D0000857C /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		63C26FA2276B54C20000857C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63C26F8E276B548D0000857C /* ViewController.swift */,
+				63C26FA9276C5B600000857C /* MytripsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63C26FA3276B54D30000857C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63C26F96276B54900000857C /* Assets.xcassets */,
+				63C26F98276B54900000857C /* LaunchScreen.storyboard */,
+				63C26F90276B548D0000857C /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		63C26FA4276C4DB60000857C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				63C26FA5276C4DC50000857C /* MenuListVC.swift */,
+				63C26FA7276C50670000857C /* SideMenuCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		63C26FAB276C8C4E0000857C /* OrderCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				63C26FAC276C8C830000857C /* OrderViewCell.swift */,
+			);
+			path = OrderCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		63C26FAE276CB8300000857C /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				63C26FAF276CB8500000857C /* OrderData.swift */,
+			);
+			path = ModelData;
+			sourceTree = "<group>";
+		};
+		CBF6BCAC5FB8414C339504AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7353E10A6A5A77F917C0AE2 /* Pods-MyTaxsiProject.debug.xcconfig */,
+				81E12EDC792DDAB4CE36FA85 /* Pods-MyTaxsiProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63C26F9E276B54900000857C /* Build configuration list for PBXNativeTarget "MyTaxsiProject" */;
 			buildPhases = (
+				61646D3DCAB296D6413E3169 /* [CP] Check Pods Manifest.lock */,
 				63C26F83276B548D0000857C /* Sources */,
 				63C26F84276B548D0000857C /* Frameworks */,
 				63C26F85276B548D0000857C /* Resources */,
+				15A1F853BBB0E22A8B46434A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +225,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15A1F853BBB0E22A8B46434A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61646D3DCAB296D6413E3169 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTaxsiProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63C26F83276B548D0000857C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				63C26F8F276B548D0000857C /* ViewController.swift in Sources */,
+				63C26FA6276C4DC50000857C /* MenuListVC.swift in Sources */,
 				63C26F95276B548D0000857C /* MyTaxsiProject.xcdatamodeld in Sources */,
 				63C26F8B276B548D0000857C /* AppDelegate.swift in Sources */,
 				63C26F8D276B548D0000857C /* SceneDelegate.swift in Sources */,
+				63C26FAD276C8C830000857C /* OrderViewCell.swift in Sources */,
+				63C26FA8276C50670000857C /* SideMenuCell.swift in Sources */,
+				63C26FB0276CB8500000857C /* OrderData.swift in Sources */,
+				63C26FAA276C5B600000857C /* MytripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +424,7 @@
 		};
 		63C26F9F276B54900000857C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7353E10A6A5A77F917C0AE2 /* Pods-MyTaxsiProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +452,7 @@
 		};
 		63C26FA0276B54900000857C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E12EDC792DDAB4CE36FA85 /* Pods-MyTaxsiProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
