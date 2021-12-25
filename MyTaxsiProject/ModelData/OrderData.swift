@@ -8,22 +8,18 @@
 import UIKit
 
 struct OrderData {
-    let dayLabel             : String
-    let characterRedImage    : UIImage
-    let streetTashkenLabel   : String
-    let characterBlueImage   : UIImage
-    let streetXodjaevaLabel  : String
-    let timeCarLabel         : String
-    let carImageView         : UIImage
+    let titleMonth: String
+    let fomAddress: String
+    let toAddress: String
+    let time: [String]
+    let carImage: [String]
 
 }
-struct OrderDataModel {
+struct OrderModel {
     static let data: [OrderData] = [
-        OrderData(dayLabel: "6 Июля, Вторник", characterRedImage: UIImage(named: ""), streetTashkenLabel: <#T##String#>, characterBlueImage: <#T##UIImage#>, streetXodjaevaLabel: <#T##String#>, timeCarLabel: <#T##String#>, carImageView: <#T##UIImage#>)
-    
-    
-    
-    
+        OrderData(titleMonth: "6 Июля, Вторник", fomAddress: "улица Sharof Rashidov, Ташкент", toAddress: "5a улица Асадуллы Ходжаева", time: ["21:36 - 22:12","14:40 - 15:00","12:00 - 12:19"], carImage: ["lacet","aveo","malibu"]),
+        OrderData(titleMonth: "5 Июля, Вторник", fomAddress: "улица Sharof Rashidov, Ташкент", toAddress: "5a улица Асадуллы Ходжаева", time: ["21:36 - 22:12","14:40 - 15:00","12:00 - 12:19"], carImage: ["lacet","aveo","malibu"])
     
     ]
+    
 }

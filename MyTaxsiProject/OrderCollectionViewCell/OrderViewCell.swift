@@ -8,120 +8,91 @@
 import UIKit
 
 class OrderViewCell: UICollectionViewCell {
-    
-    let dayLabel             = UILabel()
-    let referenceView        = UIView()
-    let characterRedImage    = UIImageView()
-    let streetTashkenLabel   = UILabel()
-    let characterBlueImage   = UIImageView()
-    let streetXodjaevaLabel  = UILabel()
-    let timeCarLabel         = UILabel()
-    let timeView             = UIView()
-    let carImageView         = UIImageView()
-
+    static let identifier = "OrderViewCell"
+    let redIcon = UIImageView()
+    let blueIcon = UIImageView()
+    var fromAddressLabel: Label!
+    var toAddressLabel: Label!
+    let timeLabel = PaddingLabel()
+    var carImage = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         initViews()
-        self.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setItem(fromAddress: String, toAddress: String,time: String, carImageName: String) {
+        self.timeLabel.text = time
+        self.fromAddressLabel.text = fromAddress
+        self.toAddressLabel.text = toAddress
+        self.carImage.image = UIImage(named: carImageName)
+    }
     func initViews() {
-        self.addSubview(dayLabel)
-        dayLabel.text = "6 Июля, Вторник"
-        dayLabel.textColor = #colorLiteral(red: 0.262745098, green: 0.262745098, blue: 0.262745098, alpha: 1)
-        dayLabel.adjustsFontSizeToFitWidth = true
-        dayLabel.font = .systemFont(ofSize: 24, weight: .semibold)
-        dayLabel.snp.makeConstraints { make in
-            make.top.equalTo(self.snp.top)
-            make.left.equalTo(self.snp.left)
-            make.height.equalTo(30)
-            make.width.equalTo(192)
-        }
-        self.addSubview(referenceView)
-        referenceView.backgroundColor = .white
-        referenceView.layer.cornerRadius = 12
-        referenceView.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
-        referenceView.layer.borderWidth = 0.1
-        referenceView.snp.makeConstraints { make in
-            make.top.equalTo(dayLabel.snp.bottom).offset(16)
-            make.left.right.equalToSuperview()
-            make.height.equalTo(118)
-            
-        }
-        referenceView.addSubview(characterRedImage)
-        characterRedImage.image = #imageLiteral(resourceName: "Frame 620 (1)")
-        characterRedImage.clipsToBounds = true
-        characterRedImage.contentMode = .scaleAspectFit
-        characterRedImage.snp.makeConstraints { make in
-            make.top.equalTo(referenceView.snp.top).offset(12)
-            make.left.equalToSuperview().inset(12)
-            make.height.width.equalTo(24)
-        }
-        referenceView.addSubview(streetTashkenLabel)
-        streetTashkenLabel.text = "улица Sharof Rashidov, Ташкент"
-        streetTashkenLabel.textColor = #colorLiteral(red: 0.262745098, green: 0.262745098, blue: 0.262745098, alpha: 1)
-        streetTashkenLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        streetTashkenLabel.adjustsFontSizeToFitWidth = true
-        streetTashkenLabel.snp.makeConstraints { make in
-            make.centerY.equalTo(characterRedImage.snp.centerY)
-            make.left.equalTo(characterRedImage.snp.right).inset(-8)
-            make.height.equalTo(24)
-            
-        }
-        referenceView.addSubview(characterBlueImage)
-        characterBlueImage.image = #imageLiteral(resourceName: "Frame 620")
-        characterBlueImage.clipsToBounds = true
-        characterBlueImage.contentMode = .scaleAspectFit
-        characterBlueImage.snp.makeConstraints { make in
-            make.top.equalTo(characterRedImage.snp.bottom).offset(5)
-            make.left.equalTo(characterRedImage.snp.left)
+        self.layer.cornerRadius = 12
+        self.layer.borderWidth = 1
+        self.layer.borderColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1).cgColor
+        self.backgroundColor = .white
+        self.clipsToBounds = true
+        
+        self.addSubview(redIcon)
+        redIcon.image = #imageLiteral(resourceName: "Frame 620 (1)")
+        redIcon.snp.makeConstraints { make in
             make.width.height.equalTo(24)
+            make.top.equalToSuperview().offset(12)
+            make.leading.equalToSuperview().inset(12)
         }
-        referenceView.addSubview(streetXodjaevaLabel)
-        streetXodjaevaLabel.text = "5a улица Асадуллы Ходжаева"
-        streetXodjaevaLabel.textColor = #colorLiteral(red: 0.262745098, green: 0.262745098, blue: 0.262745098, alpha: 1)
-        streetXodjaevaLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        streetXodjaevaLabel.adjustsFontSizeToFitWidth = true
-        streetXodjaevaLabel.snp.makeConstraints { make in
-            make.centerY.equalTo(characterBlueImage.snp.centerY)
-            make.left.equalTo(characterBlueImage.snp.right).inset(-8)
-            make.height.equalTo(24)
-            
+        
+        let fromAddressLabel = Label(text: "улица Sharof Rashidov, Ташкент", textColor: .appBlack, fontSize: 14, weight: .semibold, alignment: .left)
+        self.addSubview(fromAddressLabel)
+        self.fromAddressLabel = fromAddressLabel
+        fromAddressLabel.snp.makeConstraints { make in
+            make.leading.equalTo(redIcon.snp.trailing).offset(8)
+            make.centerY.equalTo(redIcon.snp.centerY)
+            make.trailing.equalToSuperview().inset(10)
         }
-        referenceView.addSubview(timeView)
-        timeView.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        timeView.snp.makeConstraints { make in
-            make.bottom.equalTo(referenceView.snp.bottom)
-            make.left.right.equalToSuperview()
+        
+        self.addSubview(blueIcon)
+        blueIcon.image = #imageLiteral(resourceName: "Frame 620")
+        blueIcon.snp.makeConstraints { make in
+            make.width.height.equalTo(24)
+            make.top.equalTo(redIcon.snp.bottom).offset(8)
+            make.leading.equalToSuperview().inset(12)
+        }
+        
+        let toAddressLabel = Label(text: "5a улица Асадуллы Ходжаева", textColor: .appBlack, fontSize: 14, weight: .semibold, alignment: .left)
+        self.addSubview(toAddressLabel)
+        self.toAddressLabel = toAddressLabel
+        toAddressLabel.snp.makeConstraints { make in
+            make.leading.equalTo(blueIcon.snp.trailing).offset(8)
+            make.centerY.equalTo(blueIcon.snp.centerY)
+            make.trailing.equalToSuperview().inset(10)
+        }
+
+        timeLabel.text = "21:36 - 22:12"
+        timeLabel.textColor = .appBlack
+        timeLabel.textAlignment = .left
+        timeLabel.font = .systemFont(ofSize: 14, weight: .semibold)
+        self.addSubview(timeLabel)
+        timeLabel.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
+        timeLabel.snp.makeConstraints { make in
+            make.bottom.leading.trailing.equalToSuperview()
             make.height.equalTo(42)
         }
-        timeView.addSubview(timeCarLabel)
-        timeCarLabel.text = "21:36 - 22:12"
-        timeCarLabel.textColor = #colorLiteral(red: 0.262745098, green: 0.262745098, blue: 0.262745098, alpha: 1)
-        timeCarLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        timeCarLabel.adjustsFontSizeToFitWidth = true
-        timeCarLabel.snp.makeConstraints { make in
-            make.centerY.equalTo(timeView.snp.centerY)
-            make.left.equalTo(timeView.snp.left).inset(20)
-            make.bottom.equalTo(timeView.snp.bottom).offset(-12)
-                
+        
+        self.addSubview(carImage)
+        carImage.image = #imageLiteral(resourceName: "aveo")
+        carImage.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(10)
+            make.bottom.equalToSuperview().offset(-13)
+            make.width.equalTo(108)
+            make.height.equalTo(39)
         }
-        referenceView.addSubview(carImageView)
-        carImageView.image = #imageLiteral(resourceName: "Bitmap")
-        carImageView.clipsToBounds = true
-        carImageView.contentMode = .scaleAspectFit
-        carImageView.adjustsImageSizeForAccessibilityContentSizeCategory = true
-        carImageView.snp.makeConstraints { make in
-            make.top.equalTo(streetXodjaevaLabel.snp.bottom)
-            make.right.equalToSuperview().inset(12)
-            make.bottom.equalToSuperview().offset(-15)
-        }
-
-
+        
         
         
     }

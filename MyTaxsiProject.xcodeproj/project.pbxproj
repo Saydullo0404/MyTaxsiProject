@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6342F0D12775FD56000BB1C0 /* HelpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342F0D02775FD56000BB1C0 /* HelpViewCell.swift */; };
+		6342F0D32776EF76000BB1C0 /* CallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6342F0D22776EF76000BB1C0 /* CallViewCell.swift */; };
+		634590C0277712D70041D2D4 /* DriverViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634590BF277712D70041D2D4 /* DriverViewCell.swift */; };
+		634590C22777241B0041D2D4 /* CommondataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634590C12777241A0041D2D4 /* CommondataViewCell.swift */; };
+		634590C4277732D90041D2D4 /* PaymentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634590C3277732D90041D2D4 /* PaymentViewCell.swift */; };
+		634590C727773F020041D2D4 /* FooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634590C627773F020041D2D4 /* FooterReusableView.swift */; };
+		63B8C77F2773474900321239 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8C77E2773474900321239 /* SectionCell.swift */; };
+		63B8C7822773479600321239 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8C7812773479600321239 /* UILabel.swift */; };
+		63B8C784277347E900321239 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8C783277347E900321239 /* UIColor.swift */; };
 		63C26F8B276B548D0000857C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26F8A276B548D0000857C /* AppDelegate.swift */; };
 		63C26F8D276B548D0000857C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26F8C276B548D0000857C /* SceneDelegate.swift */; };
 		63C26F8F276B548D0000857C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26F8E276B548D0000857C /* ViewController.swift */; };
@@ -19,11 +28,21 @@
 		63C26FAA276C5B600000857C /* MytripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FA9276C5B600000857C /* MytripsViewController.swift */; };
 		63C26FAD276C8C830000857C /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FAC276C8C830000857C /* OrderViewCell.swift */; };
 		63C26FB0276CB8500000857C /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C26FAF276CB8500000857C /* OrderData.swift */; };
+		63ED507C2774723B00CC5119 /* ChooseComfortCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED507B2774723B00CC5119 /* ChooseComfortCategoryVC.swift */; };
 		84DA70CA59080BEF283C2E98 /* Pods_MyTaxsiProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47040DE3B7D7C9AFC06F1A84 /* Pods_MyTaxsiProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47040DE3B7D7C9AFC06F1A84 /* Pods_MyTaxsiProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxsiProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6342F0D02775FD56000BB1C0 /* HelpViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewCell.swift; sourceTree = "<group>"; };
+		6342F0D22776EF76000BB1C0 /* CallViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewCell.swift; sourceTree = "<group>"; };
+		634590BF277712D70041D2D4 /* DriverViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewCell.swift; sourceTree = "<group>"; };
+		634590C12777241A0041D2D4 /* CommondataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommondataViewCell.swift; sourceTree = "<group>"; };
+		634590C3277732D90041D2D4 /* PaymentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewCell.swift; sourceTree = "<group>"; };
+		634590C627773F020041D2D4 /* FooterReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterReusableView.swift; sourceTree = "<group>"; };
+		63B8C77E2773474900321239 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		63B8C7812773479600321239 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		63B8C783277347E900321239 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		63C26F87276B548D0000857C /* MyTaxsiProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxsiProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C26F8A276B548D0000857C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C26F8C276B548D0000857C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +57,7 @@
 		63C26FA9276C5B600000857C /* MytripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytripsViewController.swift; sourceTree = "<group>"; };
 		63C26FAC276C8C830000857C /* OrderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
 		63C26FAF276CB8500000857C /* OrderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
+		63ED507B2774723B00CC5119 /* ChooseComfortCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseComfortCategoryVC.swift; sourceTree = "<group>"; };
 		81E12EDC792DDAB4CE36FA85 /* Pods-MyTaxsiProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxsiProject.release.xcconfig"; path = "Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject.release.xcconfig"; sourceTree = "<group>"; };
 		B7353E10A6A5A77F917C0AE2 /* Pods-MyTaxsiProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxsiProject.debug.xcconfig"; path = "Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +82,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		634590C527773E890041D2D4 /* FooterCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				634590C627773F020041D2D4 /* FooterReusableView.swift */,
+			);
+			path = FooterCollectionView;
+			sourceTree = "<group>";
+		};
+		63B8C7802773476C00321239 /* Exectension */ = {
+			isa = PBXGroup;
+			children = (
+				63B8C7812773479600321239 /* UILabel.swift */,
+				63B8C783277347E900321239 /* UIColor.swift */,
+			);
+			path = Exectension;
+			sourceTree = "<group>";
+		};
 		63C26F7E276B548D0000857C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 		63C26F89276B548D0000857C /* MyTaxsiProject */ = {
 			isa = PBXGroup;
 			children = (
+				634590C527773E890041D2D4 /* FooterCollectionView */,
+				63B8C7802773476C00321239 /* Exectension */,
 				63C26FAE276CB8300000857C /* ModelData */,
 				63C26FAB276C8C4E0000857C /* OrderCollectionViewCell */,
 				63C26FA1276B54960000857C /* App */,
@@ -109,6 +148,7 @@
 			children = (
 				63C26F8E276B548D0000857C /* ViewController.swift */,
 				63C26FA9276C5B600000857C /* MytripsViewController.swift */,
+				63ED507B2774723B00CC5119 /* ChooseComfortCategoryVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,6 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				63C26FAC276C8C830000857C /* OrderViewCell.swift */,
+				63B8C77E2773474900321239 /* SectionCell.swift */,
+				6342F0D02775FD56000BB1C0 /* HelpViewCell.swift */,
+				6342F0D22776EF76000BB1C0 /* CallViewCell.swift */,
+				634590BF277712D70041D2D4 /* DriverViewCell.swift */,
+				634590C12777241A0041D2D4 /* CommondataViewCell.swift */,
+				634590C3277732D90041D2D4 /* PaymentViewCell.swift */,
 			);
 			path = OrderCollectionViewCell;
 			sourceTree = "<group>";
@@ -169,6 +215,7 @@
 				63C26F84276B548D0000857C /* Frameworks */,
 				63C26F85276B548D0000857C /* Resources */,
 				15A1F853BBB0E22A8B46434A /* [CP] Embed Pods Frameworks */,
+				8D10A0D6CDCB5C7CAC00E416 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +312,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D10A0D6CDCB5C7CAC00E416 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTaxsiProject/Pods-MyTaxsiProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,12 +337,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C26F8F276B548D0000857C /* ViewController.swift in Sources */,
+				6342F0D12775FD56000BB1C0 /* HelpViewCell.swift in Sources */,
+				634590C22777241B0041D2D4 /* CommondataViewCell.swift in Sources */,
+				63B8C784277347E900321239 /* UIColor.swift in Sources */,
 				63C26FA6276C4DC50000857C /* MenuListVC.swift in Sources */,
+				634590C4277732D90041D2D4 /* PaymentViewCell.swift in Sources */,
 				63C26F95276B548D0000857C /* MyTaxsiProject.xcdatamodeld in Sources */,
+				63B8C7822773479600321239 /* UILabel.swift in Sources */,
+				634590C0277712D70041D2D4 /* DriverViewCell.swift in Sources */,
+				63B8C77F2773474900321239 /* SectionCell.swift in Sources */,
 				63C26F8B276B548D0000857C /* AppDelegate.swift in Sources */,
+				63ED507C2774723B00CC5119 /* ChooseComfortCategoryVC.swift in Sources */,
 				63C26F8D276B548D0000857C /* SceneDelegate.swift in Sources */,
 				63C26FAD276C8C830000857C /* OrderViewCell.swift in Sources */,
 				63C26FA8276C50670000857C /* SideMenuCell.swift in Sources */,
+				6342F0D32776EF76000BB1C0 /* CallViewCell.swift in Sources */,
+				634590C727773F020041D2D4 /* FooterReusableView.swift in Sources */,
 				63C26FB0276CB8500000857C /* OrderData.swift in Sources */,
 				63C26FAA276C5B600000857C /* MytripsViewController.swift in Sources */,
 			);
@@ -430,8 +504,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyTaxsiProject/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Iltimos ruxsat bervoring";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Iltimos ruxsat bervoring";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Iltimos ruxsat bervoring";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -458,8 +536,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyTaxsiProject/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Iltimos ruxsat bervoring";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Iltimos ruxsat bervoring";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Iltimos ruxsat bervoring";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
